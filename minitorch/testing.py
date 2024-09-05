@@ -166,7 +166,7 @@ class MathTestVariable(MathTest):
 
     @staticmethod
     def sig(x):
-        return x.sigmoid()
+        return x.sigmoid() * 5
 
     @staticmethod
     def log(x):
