@@ -70,9 +70,9 @@ def max(x: float, y: float) -> float:
     return float(x) if x > y else float(y)
 
 
-def is_close(x: float, y: float) -> bool:
+def is_close(x: float, y: float) -> float:
     """Checks if two numbers are close in value"""
-    return abs(x - y) < 1e-7
+    return 1.0 if abs(x - y) < 1e-7 else 0.0
 
 
 def sigmoid(x: float) -> float:
